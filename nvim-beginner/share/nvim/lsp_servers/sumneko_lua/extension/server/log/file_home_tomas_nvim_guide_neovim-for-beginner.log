@@ -1,0 +1,107 @@
+[15:05:25.778][info] [#0:/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:65]: Lua Lsp startup, root: 	/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server
+[15:05:25.779][info] [#0:/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:66]: ROOT:	/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server
+[15:05:25.779][info] [#0:/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:67]: LOGPATH:	/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/log
+[15:05:25.779][info] [#0:/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:68]: METAPATH:	/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/meta
+[15:05:25.779][info] [#0:/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/main.lua:69]: VERSION:	3.6.3
+[15:05:25.806][info] [#0:script/service/service.lua:141]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.547 MB
+        # 00 : 1.547 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:05:25.812][info] [#0:script/language.lua:137]: VSC language: nil
+[15:05:25.812][info] [#0:script/language.lua:138]: LS  language: en-us
+[15:05:25.812][info] [#0:script/workspace/workspace.lua:38]: Workspace init root: 	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.812][info] [#0:script/workspace/workspace.lua:42]: Log path: 	/home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/log/file_home_tomas_nvim_guide_neovim-for-beginner.log
+[15:05:25.812][info] [#0:script/workspace/workspace.lua:51]: Workspace create: 	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.914][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.914][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:25.915][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.915][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:25.915][info] [#0:script/provider/provider.lua:41]: Load config from client	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.915][info] [#0:script/provider/provider.lua:42]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:25.915][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[15:05:25.915][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:25.915][info] [#0:script/library.lua:207]: Init builtin library at:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.932][info] [#0:script/plugin.lua:86]: plugin path:	/home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.932][warn] [#0:script/plugin.lua:101]: plugin not found:	/home/tomas/nvim_guide/neovim-for-beginner
+[15:05:25.932][info] [#0:script/library.lua:207]: Init builtin library at:	nil
+[15:05:25.942][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[15:05:25.942][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:25.942][info] [#0:script/provider/provider.lua:56]: Load config from client	fallback
+[15:05:25.942][info] [#0:script/provider/provider.lua:57]: {
+  Lua = {
+    telemetry = {
+      enable = false
+    }
+  }
+}
+[15:05:26.043][info] [#0:script/workspace/workspace.lua:304]: Preload start:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.044][info] [#0:script/workspace/workspace.lua:310]: Scan files at:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.045][info] [#0:script/workspace/workspace.lua:304]: Preload start:	<fallback>
+[15:05:26.046][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8
+[15:05:26.050][info] [#0:script/workspace/workspace.lua:327]: Scan library at:	file:///home/tomas/.config/nvim-beginner/share/nvim/lsp_servers/sumneko_lua/extension/server/meta/Lua%205.4%20en-us%20utf8
+[15:05:26.152][info] [#0:script/workspace/workspace.lua:347]: Found 11 files at:	<fallback>
+[15:05:26.152][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	<fallback>
+[15:05:26.152][info] [#0:script/workspace/workspace.lua:347]: Found 32 files at:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.152][info] [#0:script/workspace/loading.lua:157]: Load files from disk:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.351][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.111] sec: <fallback>
+[15:05:26.351][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: <fallback>
+[15:05:26.351][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	<fallback>
+[15:05:26.351][info] [#0:script/workspace/workspace.lua:349]: Preload finish at:	<fallback>
+[15:05:26.473][info] [#0:script/workspace/loading.lua:169]: Loaded files takes [0.133] sec: file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.473][info] [#0:script/workspace/loading.lua:178]: Compile files takes [0.000] sec: file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.473][info] [#0:script/workspace/loading.lua:179]: Loaded finish:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.473][info] [#0:script/workspace/workspace.lua:349]: Preload finish at:	file:///home/tomas/nvim_guide/neovim-for-beginner
+[15:05:26.516][warn] [#0:script/proto/proto.lua:122]: Response of [workspace/diagnostic/refresh] error [-32601]: MethodNotFound
+[15:05:26.517][info] [#0:script/provider/diagnostic.lua:542]: Diagnostics scope [file:///home/tomas/nvim_guide/neovim-for-beginner], files count:[32]
+[15:05:26.517][warn] [#0:script/proto/proto.lua:122]: Response of [workspace/diagnostic/refresh] error [-32601]: MethodNotFound
+[15:05:26.637][info] [#0:script/provider/diagnostic.lua:559]: Diagnostics scope [file:///home/tomas/nvim_guide/neovim-for-beginner] finished, takes [0.121] sec.
+[15:06:41.526][info] [#0:script/provider/provider.lua:169]: Server shutdown.
+[15:06:41.526][warn] [#0:script/pub/report.lua:25]: Load proto error:	Disconnected!

@@ -1,0 +1,1 @@
+../../../nvim_guide/neovim-for-beginner/init.lua

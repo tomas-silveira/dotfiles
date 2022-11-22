@@ -1,0 +1,141 @@
+"Spaces and tabs
+syntax enable                " enable syntax processing
+set tabstop=4                " number of visual spaces per TAB
+set softtabstop=4            " number of spaces in tab when editing
+set shiftwidth=4
+set autoindent
+set smarttab
+" UI config
+set number                   " show line numbers
+set relativenumber
+set showcmd                  " show command in bottom bar (last command)
+set mouse=a
+set clipboard=unnamedplus " Use the system clipboard for yank / delete / paste operations    
+filetype indent on           " load filetype-specifig indent files
+set wildmenu                 " visual autocomplete for command menu (e.g. when running :e ~/.vim<TAB>
+set lazyredraw               " redraw only when we need to.
+set showmatch               " highlight matching [({})]
+" Searching
+set incsearch                " search as characters are entered set hlsearch                 " highlight matches
+
+packadd: dracula_pro
+syntax enable
+let g:dracula_color_term = 0
+colorscheme dracula
+
+
+"
+" Key bindings
+"
+"Shortcuts to save and save&close all buffers
+let mapleader="\<Space>"
+nnoremap <Leader>w :w<CR>              
+nnoremap <Leader>q :w<CR>:%bd!<CR>:q<CR>
+" move to beggining and end of the line
+nnoremap B ^
+nnoremap E $
+" set jk to escape
+inoremap jk <esc>
+" nerd tree
+nnoremap <C-n> :NERDTreeToggle<CR>
+" tag bar
+nnoremap <C-t> :TagbarOpen f<CR>
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
+" Plugins
+"
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+Plug 'https://github.com/preservim/nerdtree' " NerdTree
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }" Display colors (rgb, html, etc) 
+Plug 'https://github.com/tc50cal/vim-terminal' " Vim terminal
+Plug 'https://github.com/tpope/vim-commentary' " comment with gcc or gc
+Plug 'https://github.com/preservim/tagbar' " Tag bar
+
+Plug 'https://github.com/mkitt/tabline.vim' " Numbers on tabs
+Plug 'karoliskoncevicius/vim-sendtowindow'  " Send command to REPL 
+Plug 'mhinz/vim-startify'                   " Change start of nvim
+Plug 'https://github.com/tpope/vim-surround' " Surround text with a symbol
+
+" ============ debugging
+Plug 'mfussenegger/nvim-dap'
+Plug 'mfussenegger/nvim-dap-python'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'theHamsta/nvim-dap-virtual-text'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
+" ========= debugging
+
+" For displaying coded colors (rgb, html, etc)
+set termguicolors
+let g:Hexokinase_highlighters = ['virtual']
+
+autocmd Filetype json syntax match Comment +\/\/.\+$+
+highlight clear SignColumn
+set updatetime=300
+
+highlight Pmenu guibg=#0a0e14             " Colour of Popup menu 
+highlight PmenuSel guibg=#243247          " Colour of select in Pmenu
+highlight Visual  guifg=#000000 guibg=#FFFFFF " Change color of visual mode
+
+
+
+inoremap <expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
+
+" Remap <leader> to complete suggestion
+inoremap <silent><expr> <TAB> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<TAB>"
+
+" Mappings for terminal/terminal split
+" Window split
+set splitbelow splitright
+" Remap splits navigation to just CTRL + hjkl
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+" Make adjusting split sizes a bit more friendly
+noremap <silent> <C-Left> :vertical resize -2<CR>
+noremap <silent> <C-Right> :vertical resize +2<CR>
+noremap <silent> <C-Up> :resize -2<CR>
+noremap <silent> <C-Down> :resize +2<CR>
+" Change 2 split windows from vert to horiz to horiz to vert
+map <Leader>th <C-w>t<C-w>H
+map <Leader>tk <C-w>t<C-w>K
+" Start terminals for Python sessions '\tp'. Norm G puts the cursor on the
+" last line such that the terminal is auto-scrolled
+map <Leader>tp :new +resize7 term://zsh<CR>ipython3<CR><C-\><C-n>:norm G<CR><C-w>k
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+" NOTE: USE <C-\ C-N> to exit terminal mode
+
+" Select the entire file
+map <C-a> gg^vG$
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"

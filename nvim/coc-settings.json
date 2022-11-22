@@ -1,0 +1,178 @@
+{
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.messageLevel": "error",
+  "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.snippetHighlight": false,
+  "coc.source.file.triggerCharacters": ["/"],
+  "coc.source.file.ignoreHidden": false,
+  "coc.source.file.shortcut": "", // "", "FIL"
+  "coc.source.around.shortcut": "ARO", // "",
+  "coc.source.buffer.shortcut": "BUF", // "",
+  "coc.source.tag.shortcut": "TAG", // "",
+  "coc.source.word.shortcut": "WRD",
+  "coc.source.syntax.shortcut": "SYN",
+  "coc.source.file.priority": 13,
+  "coc.source.around.priority": 11,
+  "coc.source.buffer.priority": 12,
+  "coc.source.tag.priority": 3,
+  "coc.source.word.priority": 10,
+  "coc.source.syntax.priority": 10,
+  "outline.keepWindow": true,
+  "outline.sortBy": "position",
+  "outline.splitCommand": "botright 40vs",
+  "outline.showLineNumber": true,
+  "outline.followCursor": true,
+  "outline.switchSortKey": "<C-s>",
+  // Filetypes that enable semanticTokens highlighting
+  "semanticTokens.filetypes": [
+    "python"
+  ],
+  "pullDiagnostic.onChange": true,
+  "pullDiagnostic.onSave": false,
+  "pullDiagnostic.workspace": false,
+  "inlayHint.enable": false,
+  "inlayHint.filetypes": ["*"],
+  "inlayHint.refreshOnInsertMode": false,
+  "inlayHint.enableParameter": true,
+  "inlayHint.typeSeparator": "« ", // "‣
+  "inlayHint.parameterSeparator": "» ",
+  "inlayHint.subSeparator": " ",
+  "diagnostic.errorSign": "", //  ••
+  "diagnostic.warningSign": "", //  •
+  "diagnostic.hintSign": "", // •
+  "diagnostic.infoSign": "", // •
+  "diagnostic.checkCurrentLine": false,
+  "diagnostic.level": "hint",
+  "diagnostic.autoRefresh": true,
+  "diagnostic.refreshOnInsertMode": false,
+  "diagnostic.locationlistUpdate": true,
+  "diagnostic.virtualText": true,   // diagnostic after code
+  "diagnostic.virtualTextCurrentLineOnly": false, // shows diagnostic inline on all lines
+  "diagnostic.virtualTextLineSeparator": " \\ ",
+  "diagnostic.virtualTextPrefix": " | ",
+  "diagnostic.format": "%message [%source%code]", // %source code severity message
+  "diagnostic.signPriority": 50,
+  "diagnostic.enableHighlightLineNumber": true,
+  "diagnostic.messageTarget": "float",
+  "diagnostic.separateRelatedInformationAsDiagnostics": true,
+  // Float
+  "floatFactory.floatConfig": {
+    "border": true,
+    "rounded": false,
+    "highlight": "CocSuggestFloating",
+    "borderhighlight": "FloatBorder",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  // Suggestion description float
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": false,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  // Diagnostic box (when hovering over an error,etc)
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": false,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": false,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": false,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "dialog.floatBorderHighlight": "Normal",
+  "dialog.rounded": false,
+  "notification.border": true,
+  "notification.focusable": true,
+  "notification.highlightGroup": "CocFloating",
+  "diagnostic-languageserver.filetypes": {
+    "cmake": ["cmake-lint"],
+    "systemd": "systemd-analyze"
+  },
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "codeLens.enable": true,
+  "codeLens.separator": "‣",
+  "codeLens.subseparator": " | ",
+  "codeLens.position": "eol",
+  "list.indicator": ">",
+  "signature.enable": true,
+  "signature.target": "float",
+  "tabnine.priority": 99,
+  "tabnine.shortcut": "TN",
+  "snippets.priority": 99,
+  "snippets.shortcut": "",
+  // autocompletion choice menu
+  "suggest.pumFloatConfig": {
+    "border": true,
+    "rounded": false,
+    "highlight": "CocSuggestFloating",
+    "borderhighlight": "FloatBorder",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "suggest.snippetIndicator": "",
+  "suggest.languageSourcePriority": 99,
+  "suggest.removeDuplicateItems": true,
+  "suggest.detailField": "preview",
+  "suggest.detailMaxLength": 100,
+  "suggest.defaultSortMethod": "none",
+  "suggest.virtualText": false,
+  "suggest.selection": "first", // recentlyUsed
+  "suggest.acceptSuggestionOnCommitCharacter": true,
+  "suggest.completionItemKindLabels": {
+    "default": "",
+    "text": "", // 
+    "method": "", // 
+    "function": "", // ƒ
+    "constructor": "", // 
+    "field": "", // 料  
+    "variable": "", //  
+    "class": "", // ﴯ 
+    "interface": "", // 
+    "module": "", // 
+    "property": "", // ﰠ
+    "unit": "", //  塞
+    "value": "",
+    "enum": "", // 
+    "keyword": "", // 
+    "snippet": "", //    
+    "color": "",
+    "file": "", // 
+    "reference": "", //  渚
+    "folder": "", // 
+    "enumMember": "", // 
+    "constant": "", // 
+    "struct": "פּ", // 
+    "event": "", // 鬒
+    "operator": "Ψ", // 
+    "typeParameter": "" //   
+  },
+  // ╭──────────────────────────────────────────────────────────╮
+  // │                          Python                          │
+  // ╰──────────────────────────────────────────────────────────╯
+  "pyright.inlayHints.enable": false,
+  "snippets.ultisnips.pythonPrompt": false
+}
